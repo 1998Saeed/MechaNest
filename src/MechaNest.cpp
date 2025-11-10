@@ -1,13 +1,14 @@
-#include "MechNest.h"
+#include "MechaNest.h"
 
-MechNest::MechNest(int pin) {
+MechaNest::MechaNest(int pin, int delayTime) {
   _pin = pin;
+  _delayTime = delayTime;
   pinMode(_pin, OUTPUT);
 }
 
-void MechNest::blink(int delayTime) {
+void MechaNest::blink() {
   digitalWrite(_pin, HIGH);
-  delay(delayTime);
+  delay(_delayTime);
   digitalWrite(_pin, LOW);
-  delay(delayTime);
+  delay(_delayTime);
 }
