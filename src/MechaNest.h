@@ -1,14 +1,15 @@
-#ifndef MechNest_h
-#define MechNest_h
+#ifndef MechaNest_h
+#define MechaNest_h
 
 #include "Arduino.h"
 
-class MechNest {
+class MechaNest {
   public:
-    MechNest(int pin);
-    void blink(int delayTime);
+    MechaNest(int pin, int delayTime);
+    void blink();
   private:
     int _pin;
+    int _delayTime;
 };
 
 #endif
