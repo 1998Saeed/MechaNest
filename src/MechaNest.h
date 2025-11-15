@@ -1,15 +1,9 @@
-#ifndef MechaNest_h
-#define MechaNest_h
+#ifndef MECHANEST_H
+#define MECHANEST_H
 
-#include "Arduino.h"
+#include <Arduino.h>
+#include <SoftwareSerial.h>
 
-class MechaNest {
-  public:
-    MechaNest(int pin, int delayTime);
-    void blink();
-  private:
-    int _pin;
-    int _delayTime;
-};
+void BT_Contact();
 
 #endif
